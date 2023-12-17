@@ -1,0 +1,809 @@
+Analysis & Synthesis report for projeto_8
+Sat Dec 16 22:22:29 2023
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF0"
+ 10. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF1"
+ 11. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF2"
+ 12. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF3"
+ 13. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF4"
+ 14. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF5"
+ 15. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF6"
+ 16. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF7"
+ 17. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF8"
+ 18. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF9"
+ 19. Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS"
+ 20. Port Connectivity Checks: "FullAdder8Bit:SOMA_01"
+ 21. Port Connectivity Checks: "FullAdder8Bit:SOMA_00"
+ 22. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD7"
+ 23. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL7"
+ 24. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL6"
+ 25. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL5"
+ 26. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL4"
+ 27. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL3"
+ 28. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL2"
+ 29. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1"
+ 30. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL1"
+ 31. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT"
+ 32. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF0"
+ 33. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF1"
+ 34. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF2"
+ 35. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF3"
+ 36. Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02"
+ 37. Port Connectivity Checks: "CODIFICADOR:COD00|Demux_1x4:DEMUX_00"
+ 38. Elapsed Time Per Partition
+ 39. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Dec 16 22:22:29 2023           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; projeto_8                                       ;
+; Top-level Entity Name              ; BLOCO_FLIR                                      ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 156                                             ;
+;     Total combinational functions  ; 132                                             ;
+;     Dedicated logic registers      ; 34                                              ;
+; Total registers                    ; 34                                              ;
+; Total pins                         ; 26                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CGX50DF27C6     ;                    ;
+; Top-level entity name                                                      ; BLOCO_FLIR         ; projeto_8          ;
+; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                           ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+; ffd.vhd                          ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/ffd.vhd                 ;         ;
+; REGISTRADOR_4_BITS.vhd           ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/REGISTRADOR_4_BITS.vhd  ;         ;
+; mux_2x1_1BITS.vhd                ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/mux_2x1_1BITS.vhd       ;         ;
+; FullAdder1Bit.vhd                ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder1Bit.vhd       ;         ;
+; FullAdder4Bit.vhd                ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder4Bit.vhd       ;         ;
+; FullAdder8Bit.vhd                ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder8Bit.vhd       ;         ;
+; SHL8bits2.vhd                    ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits2.vhd           ;         ;
+; SHL8bits4.vhd                    ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits4.vhd           ;         ;
+; SHL8bits1.vhd                    ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits1.vhd           ;         ;
+; halfAdder.vhd                    ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/halfAdder.vhd           ;         ;
+; Multiplicador_8BITS.vhd          ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Multiplicador_8BITS.vhd ;         ;
+; SHL8bitsBarrel.vhd               ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bitsBarrel.vhd      ;         ;
+; BLOCO_BXC.vhd                    ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_BXC.vhd           ;         ;
+; Demux_1x4.vhd                    ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Demux_1x4.vhd           ;         ;
+; CODIFICADOR.vhd                  ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/CODIFICADOR.vhd         ;         ;
+; BLOCO_FLIR.vhd                   ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_FLIR.vhd          ;         ;
+; REGISTRADOR_10_BITS.vhd          ; yes             ; User VHDL File  ; G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/REGISTRADOR_10_BITS.vhd ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 26               ;
+; DSP block 9-bit elements ; 0                ;
+; Maximum fan-out node     ; CK~input         ;
+; Maximum fan-out          ; 34               ;
+; Total fan-out            ; 606              ;
+; Average fan-out          ; 2.78             ;
++--------------------------+------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                  ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Library Name ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |BLOCO_FLIR                              ; 132 (0)           ; 34 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 26   ; 0            ; |BLOCO_FLIR                                                                                                                        ; work         ;
+;    |BLOCO_BXC:BL_RXC_00|                 ; 30 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00                                                                                                    ; work         ;
+;       |Multiplicador_8BITS:MULT|         ; 30 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT                                                                           ; work         ;
+;          |FullAdder8Bit:ADD1|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U2|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U2|halfAdder:HalfAdder1 ; work         ;
+;                |FullAdder1Bit:U3|        ; 4 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U3|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U4|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder2 ; work         ;
+;          |FullAdder8Bit:ADD2|            ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U4|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder2 ; work         ;
+;             |FullAdder4Bit:U2|           ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2                                       ; work         ;
+;                |FullAdder1Bit:U1|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U1                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U2|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder1 ; work         ;
+;          |FullAdder8Bit:ADD3|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U4|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder1 ; work         ;
+;             |FullAdder4Bit:U2|           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2                                       ; work         ;
+;                |FullAdder1Bit:U1|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U1                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder1 ; work         ;
+;                |FullAdder1Bit:U2|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder1 ; work         ;
+;                |FullAdder1Bit:U3|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U3|halfAdder:HalfAdder1 ; work         ;
+;       |REGISTRADOR_4_BITS:REGC00|        ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGC00                                                                          ; work         ;
+;          |ffd:FF0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGC00|ffd:FF0                                                                  ; work         ;
+;          |ffd:FF1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGC00|ffd:FF1                                                                  ; work         ;
+;          |ffd:FF2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGC00|ffd:FF2                                                                  ; work         ;
+;          |ffd:FF3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGC00|ffd:FF3                                                                  ; work         ;
+;       |REGISTRADOR_4_BITS:REGY00|        ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGY00                                                                          ; work         ;
+;          |ffd:FF0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGY00|ffd:FF0                                                                  ; work         ;
+;          |ffd:FF1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGY00|ffd:FF1                                                                  ; work         ;
+;          |ffd:FF2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGY00|ffd:FF2                                                                  ; work         ;
+;          |ffd:FF3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_00|REGISTRADOR_4_BITS:REGY00|ffd:FF3                                                                  ; work         ;
+;    |BLOCO_BXC:BL_RXC_01|                 ; 35 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01                                                                                                    ; work         ;
+;       |Multiplicador_8BITS:MULT|         ; 35 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT                                                                           ; work         ;
+;          |FullAdder8Bit:ADD1|            ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U2|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U2|halfAdder:HalfAdder1 ; work         ;
+;                |FullAdder1Bit:U3|        ; 5 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U3|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U4|        ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder2 ; work         ;
+;          |FullAdder8Bit:ADD2|            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U3|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U3|halfAdder:HalfAdder1 ; work         ;
+;                |FullAdder1Bit:U4|        ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder2 ; work         ;
+;             |FullAdder4Bit:U2|           ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2                                       ; work         ;
+;                |FullAdder1Bit:U1|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U1                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U2|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder1 ; work         ;
+;          |FullAdder8Bit:ADD3|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U4|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder1 ; work         ;
+;             |FullAdder4Bit:U2|           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2                                       ; work         ;
+;                |FullAdder1Bit:U1|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U1                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U2|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U3|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U3|halfAdder:HalfAdder2 ; work         ;
+;       |REGISTRADOR_4_BITS:REGC00|        ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGC00                                                                          ; work         ;
+;          |ffd:FF0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGC00|ffd:FF0                                                                  ; work         ;
+;          |ffd:FF1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGC00|ffd:FF1                                                                  ; work         ;
+;          |ffd:FF2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGC00|ffd:FF2                                                                  ; work         ;
+;          |ffd:FF3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGC00|ffd:FF3                                                                  ; work         ;
+;       |REGISTRADOR_4_BITS:REGY00|        ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGY00                                                                          ; work         ;
+;          |ffd:FF0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGY00|ffd:FF0                                                                  ; work         ;
+;          |ffd:FF1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGY00|ffd:FF1                                                                  ; work         ;
+;          |ffd:FF2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGY00|ffd:FF2                                                                  ; work         ;
+;          |ffd:FF3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_01|REGISTRADOR_4_BITS:REGY00|ffd:FF3                                                                  ; work         ;
+;    |BLOCO_BXC:BL_RXC_02|                 ; 31 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02                                                                                                    ; work         ;
+;       |Multiplicador_8BITS:MULT|         ; 31 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT                                                                           ; work         ;
+;          |FullAdder8Bit:ADD1|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U2|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U2|halfAdder:HalfAdder1 ; work         ;
+;                |FullAdder1Bit:U3|        ; 4 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U3|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U4|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder2 ; work         ;
+;          |FullAdder8Bit:ADD2|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U3|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U3|halfAdder:HalfAdder1 ; work         ;
+;                |FullAdder1Bit:U4|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder2 ; work         ;
+;             |FullAdder4Bit:U2|           ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2                                       ; work         ;
+;                |FullAdder1Bit:U1|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U1                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U2|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD2|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder1 ; work         ;
+;          |FullAdder8Bit:ADD3|            ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3                                                        ; work         ;
+;             |FullAdder4Bit:U1|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1                                       ; work         ;
+;                |FullAdder1Bit:U4|        ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1|FullAdder1Bit:U4                      ; work         ;
+;                   |halfAdder:HalfAdder1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder1 ; work         ;
+;             |FullAdder4Bit:U2|           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2                                       ; work         ;
+;                |FullAdder1Bit:U1|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U1                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U2|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U2                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder2 ; work         ;
+;                |FullAdder1Bit:U3|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U3                      ; work         ;
+;                   |halfAdder:HalfAdder2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD3|FullAdder4Bit:U2|FullAdder1Bit:U3|halfAdder:HalfAdder2 ; work         ;
+;       |REGISTRADOR_4_BITS:REGC00|        ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGC00                                                                          ; work         ;
+;          |ffd:FF0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGC00|ffd:FF0                                                                  ; work         ;
+;          |ffd:FF1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGC00|ffd:FF1                                                                  ; work         ;
+;          |ffd:FF2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGC00|ffd:FF2                                                                  ; work         ;
+;          |ffd:FF3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGC00|ffd:FF3                                                                  ; work         ;
+;       |REGISTRADOR_4_BITS:REGY00|        ; 0 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00                                                                          ; work         ;
+;          |ffd:FF0|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF0                                                                  ; work         ;
+;          |ffd:FF1|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF1                                                                  ; work         ;
+;          |ffd:FF2|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF2                                                                  ; work         ;
+;          |ffd:FF3|                       ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF3                                                                  ; work         ;
+;    |CODIFICADOR:COD00|                   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|CODIFICADOR:COD00                                                                                                      ; work         ;
+;       |Demux_1x4:DEMUX_00|               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|CODIFICADOR:COD00|Demux_1x4:DEMUX_00                                                                                   ; work         ;
+;    |FullAdder8Bit:SOMA_00|               ; 13 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00                                                                                                  ; work         ;
+;       |FullAdder4Bit:U1|                 ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1                                                                                 ; work         ;
+;          |FullAdder1Bit:U1|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U1                                                                ; work         ;
+;             |halfAdder:HalfAdder1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U1|halfAdder:HalfAdder1                                           ; work         ;
+;          |FullAdder1Bit:U2|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U2                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U2|halfAdder:HalfAdder2                                           ; work         ;
+;          |FullAdder1Bit:U3|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U3                                                                ; work         ;
+;             |halfAdder:HalfAdder1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U3|halfAdder:HalfAdder1                                           ; work         ;
+;          |FullAdder1Bit:U4|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U4                                                                ; work         ;
+;             |halfAdder:HalfAdder1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder1                                           ; work         ;
+;       |FullAdder4Bit:U2|                 ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U2                                                                                 ; work         ;
+;          |FullAdder1Bit:U1|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U2|FullAdder1Bit:U1                                                                ; work         ;
+;             |halfAdder:HalfAdder1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder1                                           ; work         ;
+;          |FullAdder1Bit:U2|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U2|FullAdder1Bit:U2                                                                ; work         ;
+;             |halfAdder:HalfAdder1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder1                                           ; work         ;
+;          |FullAdder1Bit:U3|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U2|FullAdder1Bit:U3                                                                ; work         ;
+;             |halfAdder:HalfAdder1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_00|FullAdder4Bit:U2|FullAdder1Bit:U3|halfAdder:HalfAdder1                                           ; work         ;
+;    |FullAdder8Bit:SOMA_01|               ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01                                                                                                  ; work         ;
+;       |FullAdder4Bit:U1|                 ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1                                                                                 ; work         ;
+;          |FullAdder1Bit:U1|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U1                                                                ; work         ;
+;             |halfAdder:HalfAdder1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U1|halfAdder:HalfAdder1                                           ; work         ;
+;          |FullAdder1Bit:U2|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U2                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U2|halfAdder:HalfAdder2                                           ; work         ;
+;          |FullAdder1Bit:U3|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U3                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U3|halfAdder:HalfAdder2                                           ; work         ;
+;          |FullAdder1Bit:U4|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U4                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U1|FullAdder1Bit:U4|halfAdder:HalfAdder2                                           ; work         ;
+;       |FullAdder4Bit:U2|                 ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2                                                                                 ; work         ;
+;          |FullAdder1Bit:U1|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U1                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U1|halfAdder:HalfAdder2                                           ; work         ;
+;          |FullAdder1Bit:U2|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U2                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U2|halfAdder:HalfAdder2                                           ; work         ;
+;          |FullAdder1Bit:U3|              ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U3                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U3|halfAdder:HalfAdder2                                           ; work         ;
+;          |FullAdder1Bit:U4|              ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U4                                                                ; work         ;
+;             |halfAdder:HalfAdder2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|FullAdder8Bit:SOMA_01|FullAdder4Bit:U2|FullAdder1Bit:U4|halfAdder:HalfAdder2                                           ; work         ;
+;    |REGISTRADOR_10_BITS:REG_01_10BITS|   ; 6 (0)             ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS                                                                                      ; work         ;
+;       |ffd:FF0|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF0                                                                              ; work         ;
+;       |ffd:FF1|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF1                                                                              ; work         ;
+;       |ffd:FF2|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF2                                                                              ; work         ;
+;       |ffd:FF3|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF3                                                                              ; work         ;
+;       |ffd:FF4|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF4                                                                              ; work         ;
+;       |ffd:FF5|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF5                                                                              ; work         ;
+;       |ffd:FF6|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF6                                                                              ; work         ;
+;       |ffd:FF7|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF7                                                                              ; work         ;
+;       |ffd:FF8|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF8                                                                              ; work         ;
+;       |ffd:FF9|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF9                                                                              ; work         ;
+;       |mux_2x1_1BITS:mux04|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|mux_2x1_1BITS:mux04                                                                  ; work         ;
+;       |mux_2x1_1BITS:mux05|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|mux_2x1_1BITS:mux05                                                                  ; work         ;
+;       |mux_2x1_1BITS:mux06|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|mux_2x1_1BITS:mux06                                                                  ; work         ;
+;       |mux_2x1_1BITS:mux07|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|mux_2x1_1BITS:mux07                                                                  ; work         ;
+;       |mux_2x1_1BITS:mux08|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|mux_2x1_1BITS:mux08                                                                  ; work         ;
+;       |mux_2x1_1BITS:mux09|              ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |BLOCO_FLIR|REGISTRADOR_10_BITS:REG_01_10BITS|mux_2x1_1BITS:mux09                                                                  ; work         ;
++------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 34    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 34    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF0" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF1" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF2" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF3" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF4" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF5" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF6" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF7" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF8" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS|ffd:FF9" ;
++------+-------+----------+---------------------------------------------+
+; Port ; Type  ; Severity ; Details                                     ;
++------+-------+----------+---------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                ;
++------+-------+----------+---------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "REGISTRADOR_10_BITS:REG_01_10BITS" ;
++---------+-------+----------+----------------------------------+
+; Port    ; Type  ; Severity ; Details                          ;
++---------+-------+----------+----------------------------------+
+; e[9..8] ; Input ; Info     ; Stuck at GND                     ;
++---------+-------+----------+----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FullAdder8Bit:SOMA_01"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FullAdder8Bit:SOMA_00"                                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD7"                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL7" ;
++------+-------+----------+--------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                            ;
++------+-------+----------+--------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at VCC                                                       ;
++------+-------+----------+--------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL6" ;
++---------+-------+----------+-----------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                         ;
++---------+-------+----------+-----------------------------------------------------------------+
+; b[2..1] ; Input ; Info     ; Stuck at VCC                                                    ;
+; b[0]    ; Input ; Info     ; Stuck at GND                                                    ;
++---------+-------+----------+-----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL5" ;
++------+-------+----------+--------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                            ;
++------+-------+----------+--------------------------------------------------------------------+
+; b[2] ; Input ; Info     ; Stuck at VCC                                                       ;
+; b[1] ; Input ; Info     ; Stuck at GND                                                       ;
+; b[0] ; Input ; Info     ; Stuck at VCC                                                       ;
++------+-------+----------+--------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL4" ;
++---------+-------+----------+-----------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                         ;
++---------+-------+----------+-----------------------------------------------------------------+
+; b[1..0] ; Input ; Info     ; Stuck at GND                                                    ;
+; b[2]    ; Input ; Info     ; Stuck at VCC                                                    ;
++---------+-------+----------+-----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL3" ;
++---------+-------+----------+-----------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                         ;
++---------+-------+----------+-----------------------------------------------------------------+
+; b[1..0] ; Input ; Info     ; Stuck at VCC                                                    ;
+; b[2]    ; Input ; Info     ; Stuck at GND                                                    ;
++---------+-------+----------+-----------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL2" ;
++------+-------+----------+--------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                            ;
++------+-------+----------+--------------------------------------------------------------------+
+; b[2] ; Input ; Info     ; Stuck at GND                                                       ;
+; b[1] ; Input ; Info     ; Stuck at VCC                                                       ;
+; b[0] ; Input ; Info     ; Stuck at GND                                                       ;
++------+-------+----------+--------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1" ;
++------+-------+----------+-------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                           ;
++------+-------+----------+-------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                      ;
++------+-------+----------+-------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL1" ;
++---------+-------+----------+-----------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                         ;
++---------+-------+----------+-----------------------------------------------------------------+
+; b[2..1] ; Input ; Info     ; Stuck at GND                                                    ;
+; b[0]    ; Input ; Info     ; Stuck at VCC                                                    ;
++---------+-------+----------+-----------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT" ;
++---------+-------+----------+---------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                     ;
++---------+-------+----------+---------------------------------------------+
+; a[7..4] ; Input ; Info     ; Stuck at GND                                ;
+; b[7..4] ; Input ; Info     ; Stuck at GND                                ;
++---------+-------+----------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF0" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF1" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF2" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF3" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; set  ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BLOCO_BXC:BL_RXC_02"                                                                 ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; out_y ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CODIFICADOR:COD00|Demux_1x4:DEMUX_00"                                               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; ld3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Dec 16 22:22:14 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_8 -c projeto_8
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file ffd.vhd
+    Info (12022): Found design unit 1: ffd-logica
+    Info (12023): Found entity 1: ffd
+Info (12021): Found 2 design units, including 1 entities, in source file registrador_4_bits.vhd
+    Info (12022): Found design unit 1: REGISTRADOR_4_BITS-ckt
+    Info (12023): Found entity 1: REGISTRADOR_4_BITS
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2x1_1bits.vhd
+    Info (12022): Found design unit 1: mux_2x1_1BITS-ckt
+    Info (12023): Found entity 1: mux_2x1_1BITS
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder1bit.vhd
+    Info (12022): Found design unit 1: FullAdder1Bit-Main
+    Info (12023): Found entity 1: FullAdder1Bit
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder4bit.vhd
+    Info (12022): Found design unit 1: FullAdder4Bit-ckt
+    Info (12023): Found entity 1: FullAdder4Bit
+Info (12021): Found 2 design units, including 1 entities, in source file fulladder8bit.vhd
+    Info (12022): Found design unit 1: FullAdder8Bit-ckt
+    Info (12023): Found entity 1: FullAdder8Bit
+Info (12021): Found 2 design units, including 1 entities, in source file shl8bits2.vhd
+    Info (12022): Found design unit 1: SHL8bits2-ckt
+    Info (12023): Found entity 1: SHL8bits2
+Info (12021): Found 2 design units, including 1 entities, in source file shl8bits4.vhd
+    Info (12022): Found design unit 1: SHL8bits4-ckt
+    Info (12023): Found entity 1: SHL8bits4
+Info (12021): Found 2 design units, including 1 entities, in source file shl8bits1.vhd
+    Info (12022): Found design unit 1: SHL8bits1-ckt
+    Info (12023): Found entity 1: SHL8bits1
+Info (12021): Found 2 design units, including 1 entities, in source file halfadder.vhd
+    Info (12022): Found design unit 1: halfAdder-main
+    Info (12023): Found entity 1: halfAdder
+Info (12021): Found 2 design units, including 1 entities, in source file multiplicador_8bits.vhd
+    Info (12022): Found design unit 1: Multiplicador_8BITS-ckt
+    Info (12023): Found entity 1: Multiplicador_8BITS
+Info (12021): Found 2 design units, including 1 entities, in source file shl8bitsbarrel.vhd
+    Info (12022): Found design unit 1: SHL8bitsBarrel-ckt
+    Info (12023): Found entity 1: SHL8bitsBarrel
+Info (12021): Found 2 design units, including 1 entities, in source file bloco_bxc.vhd
+    Info (12022): Found design unit 1: BLOCO_BXC-ckt
+    Info (12023): Found entity 1: BLOCO_BXC
+Info (12021): Found 2 design units, including 1 entities, in source file demux_1x4.vhd
+    Info (12022): Found design unit 1: Demux_1x4-ckt
+    Info (12023): Found entity 1: Demux_1x4
+Info (12021): Found 2 design units, including 1 entities, in source file codificador.vhd
+    Info (12022): Found design unit 1: CODIFICADOR-CKT
+    Info (12023): Found entity 1: CODIFICADOR
+Info (12021): Found 2 design units, including 1 entities, in source file bloco_flir.vhd
+    Info (12022): Found design unit 1: BLOCO_FLIR-ckt
+    Info (12023): Found entity 1: BLOCO_FLIR
+Info (12021): Found 2 design units, including 1 entities, in source file registrador_10_bits.vhd
+    Info (12022): Found design unit 1: REGISTRADOR_10_BITS-ckt
+    Info (12023): Found entity 1: REGISTRADOR_10_BITS
+Info (12127): Elaborating entity "BLOCO_FLIR" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at BLOCO_FLIR.vhd(43): object "OUT_BLY_02" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at BLOCO_FLIR.vhd(47): object "Cout" assigned a value but never read
+Info (12128): Elaborating entity "CODIFICADOR" for hierarchy "CODIFICADOR:COD00"
+Warning (10036): Verilog HDL or VHDL warning at CODIFICADOR.vhd(18): object "LD3" assigned a value but never read
+Info (12128): Elaborating entity "Demux_1x4" for hierarchy "CODIFICADOR:COD00|Demux_1x4:DEMUX_00"
+Info (12128): Elaborating entity "BLOCO_BXC" for hierarchy "BLOCO_BXC:BL_RXC_02"
+Info (12128): Elaborating entity "REGISTRADOR_4_BITS" for hierarchy "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00"
+Info (12128): Elaborating entity "mux_2x1_1BITS" for hierarchy "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|mux_2x1_1BITS:mux00"
+Info (12128): Elaborating entity "ffd" for hierarchy "BLOCO_BXC:BL_RXC_02|REGISTRADOR_4_BITS:REGY00|ffd:FF3"
+Info (12128): Elaborating entity "Multiplicador_8BITS" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT"
+Info (12128): Elaborating entity "SHL8bitsBarrel" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL1"
+Info (12128): Elaborating entity "SHL8bits1" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL1|SHL8bits1:SHL1"
+Info (12128): Elaborating entity "SHL8bits2" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL1|SHL8bits2:SHL2"
+Info (12128): Elaborating entity "SHL8bits4" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|SHL8bitsBarrel:SHL1|SHL8bits4:SHL4"
+Info (12128): Elaborating entity "FullAdder8Bit" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1"
+Info (12128): Elaborating entity "FullAdder4Bit" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1"
+Info (12128): Elaborating entity "FullAdder1Bit" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U1"
+Info (12128): Elaborating entity "halfAdder" for hierarchy "BLOCO_BXC:BL_RXC_02|Multiplicador_8BITS:MULT|FullAdder8Bit:ADD1|FullAdder4Bit:U1|FullAdder1Bit:U1|halfAdder:HalfAdder1"
+Info (12128): Elaborating entity "REGISTRADOR_10_BITS" for hierarchy "REGISTRADOR_10_BITS:REG_01_10BITS"
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 156 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4694 megabytes
+    Info: Processing ended: Sat Dec 16 22:22:29 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:05
+
+

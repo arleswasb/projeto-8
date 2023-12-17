@@ -1,0 +1,314 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do projeto_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/ffd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ffd
+# -- Compiling architecture logica of ffd
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/REGISTRADOR_4_BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REGISTRADOR_4_BITS
+# -- Compiling architecture ckt of REGISTRADOR_4_BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/mux_2x1_1BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1_1BITS
+# -- Compiling architecture ckt of mux_2x1_1BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder4Bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder4Bit
+# -- Compiling architecture ckt of FullAdder4Bit
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder8Bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder8Bit
+# -- Compiling architecture ckt of FullAdder8Bit
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bits2
+# -- Compiling architecture ckt of SHL8bits2
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bits4
+# -- Compiling architecture ckt of SHL8bits4
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bits1
+# -- Compiling architecture ckt of SHL8bits1
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/halfAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity halfAdder
+# -- Compiling architecture main of halfAdder
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Multiplicador_8BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplicador_8BITS
+# -- Compiling architecture ckt of Multiplicador_8BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bitsBarrel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bitsBarrel
+# -- Compiling architecture ckt of SHL8bitsBarrel
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_BXC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BLOCO_BXC
+# -- Compiling architecture ckt of BLOCO_BXC
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Demux_1x4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux_1x4
+# -- Compiling architecture ckt of Demux_1x4
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/CODIFICADOR.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CODIFICADOR
+# -- Compiling architecture CKT of CODIFICADOR
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_FLIR.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BLOCO_FLIR
+# -- Compiling architecture ckt of BLOCO_FLIR
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/REGISTRADOR_10_BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REGISTRADOR_10_BITS
+# -- Compiling architecture ckt of REGISTRADOR_10_BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder1Bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder1Bit
+# -- Compiling architecture Main of FullAdder1Bit
+# -- Loading entity halfAdder
+# 
+vsim +altera -do projeto_8_run_msim_rtl_vhdl.do -l msim_transcript -gui work.bloco_flir
+# vsim +altera -do projeto_8_run_msim_rtl_vhdl.do -l msim_transcript -gui work.bloco_flir 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.bloco_flir(ckt)
+# Loading work.codificador(ckt)
+# Loading work.demux_1x4(ckt)
+# Loading work.bloco_bxc(ckt)
+# Loading work.registrador_4_bits(ckt)
+# Loading work.mux_2x1_1bits(ckt)
+# Loading work.ffd(logica)
+# Loading work.multiplicador_8bits(ckt)
+# Loading work.shl8bitsbarrel(ckt)
+# Loading work.shl8bits1(ckt)
+# Loading work.shl8bits2(ckt)
+# Loading work.shl8bits4(ckt)
+# Loading work.fulladder8bit(ckt)
+# Loading work.fulladder4bit(ckt)
+# Loading work.fulladder1bit(main)
+# Loading work.halfadder(main)
+# Loading work.registrador_10_bits(ckt)
+# ** Warning: Design size of 2150 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# do projeto_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/ffd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ffd
+# -- Compiling architecture logica of ffd
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/REGISTRADOR_4_BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REGISTRADOR_4_BITS
+# -- Compiling architecture ckt of REGISTRADOR_4_BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/mux_2x1_1BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2x1_1BITS
+# -- Compiling architecture ckt of mux_2x1_1BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder4Bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder4Bit
+# -- Compiling architecture ckt of FullAdder4Bit
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder8Bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder8Bit
+# -- Compiling architecture ckt of FullAdder8Bit
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bits2
+# -- Compiling architecture ckt of SHL8bits2
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bits4
+# -- Compiling architecture ckt of SHL8bits4
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bits1
+# -- Compiling architecture ckt of SHL8bits1
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/halfAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity halfAdder
+# -- Compiling architecture main of halfAdder
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Multiplicador_8BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Multiplicador_8BITS
+# -- Compiling architecture ckt of Multiplicador_8BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bitsBarrel.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SHL8bitsBarrel
+# -- Compiling architecture ckt of SHL8bitsBarrel
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_BXC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BLOCO_BXC
+# -- Compiling architecture ckt of BLOCO_BXC
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Demux_1x4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demux_1x4
+# -- Compiling architecture ckt of Demux_1x4
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/CODIFICADOR.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CODIFICADOR
+# -- Compiling architecture CKT of CODIFICADOR
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_FLIR.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BLOCO_FLIR
+# -- Compiling architecture ckt of BLOCO_FLIR
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/REGISTRADOR_10_BITS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity REGISTRADOR_10_BITS
+# -- Compiling architecture ckt of REGISTRADOR_10_BITS
+# vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder1Bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder1Bit
+# -- Compiling architecture Main of FullAdder1Bit
+# -- Loading entity halfAdder
+# 
+add wave -position insertpoint sim:/bloco_flir/*
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+force -freeze sim:/bloco_flir/EN_COD 1 0
+force -freeze sim:/bloco_flir/EN_COD 0 0
+force -freeze sim:/bloco_flir/S_COD 01 0
+force -freeze sim:/bloco_flir/Y 0111 0
+force -freeze sim:/bloco_flir/C_0_1_2_3 0001 0
+force -freeze sim:/bloco_flir/CK 1 0, 0 {15 ps} -r 30
+force -freeze sim:/bloco_flir/CLR_AS 1U 0
+# ** Error: (vsim-4026) Value "1u" does not represent a literal of the enumeration type.
+# ** Error: (vsim-4011) Invalid force value: 1U 0.
+# 
+force -freeze sim:/bloco_flir/CLR_R 1 0
+force -freeze sim:/bloco_flir/LD_R 0 0
+force -freeze sim:/bloco_flir/LD_OUT 0 0
+run
+force -freeze sim:/bloco_flir/CLR_AS 1 0
+run
+force -freeze sim:/bloco_flir/CLR_AS 0 0
+force -freeze sim:/bloco_flir/CLR_R 0 0
+force -freeze sim:/bloco_flir/EN_COD 1 0
+force -freeze sim:/bloco_flir/LD_R 1 0
+run
+force -freeze sim:/bloco_flir/LD_OUT 1 0
+force -freeze sim:/bloco_flir/LD_R 0 0
+run

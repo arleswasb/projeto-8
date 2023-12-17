@@ -1,0 +1,24 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/ffd.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/REGISTRADOR_4_BITS.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/mux_2x1_1BITS.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder4Bit.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder8Bit.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits2.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits4.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bits1.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/halfAdder.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Multiplicador_8BITS.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/SHL8bitsBarrel.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_BXC.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/Demux_1x4.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/CODIFICADOR.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/BLOCO_FLIR.vhd}
+vcom -93 -work work {G:/UFRN2023.2/CIRCUITOS DIGITAIS/LABORATORIO/PROJETO 8/projeto 8/arquivos VHDL/FullAdder1Bit.vhd}
+
